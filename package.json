@@ -1,0 +1,40 @@
+{
+  "name": "socialarea",
+  "version": "1.0.0",
+  "description": "Social Area for social interactions",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "nodemon /public/app.js",
+    "build": "webpack-cli --mode development",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoundCloud-Front-End-Capstone/SocialArea.git"
+  },
+  "author": "Alan Fu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoundCloud-Front-End-Capstone/SocialArea/issues"
+  },
+  "homepage": "https://github.com/SoundCloud-Front-End-Capstone/SocialArea#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  }
+}
