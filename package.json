@@ -2,10 +2,11 @@
   "name": "socialarea",
   "version": "1.0.0",
   "description": "Social Area for social interactions",
-  "main": "server/app.js",
+  "main": "public/bundle.js",
   "scripts": {
-    "start": "nodemon /public/app.js",
+    "start": "nodemon ./server/server.js",
     "build": "webpack-cli --mode development",
+    "db": "nodemon ./db/index.js",
     "test": "jest"
   },
   "repository": {
@@ -33,6 +34,7 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "mongoose": "^5.2.13",
     "nodemon": "^1.18.4",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
