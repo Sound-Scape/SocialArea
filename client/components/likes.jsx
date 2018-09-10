@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Container extends React.Component {
+class Likes extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,9 +9,9 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        2.
+        5.
         {' '}
-        <b>Container</b>
+        <b>Likes</b>
         {' '}
 Component is operational...
       </div>
@@ -19,4 +19,4 @@ Component is operational...
   }
 }
 
-export default Container;
+export default Likes;
