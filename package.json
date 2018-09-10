@@ -5,7 +5,7 @@
   "main": "public/bundle.js",
   "scripts": {
     "start": "nodemon ./server/server.js",
-    "build": "webpack-cli --mode development",
+    "build": "webpack-cli --mode development --watch",
     "seed": "node ./db/seed.js",
     "db": "nodemon ./db/index.js",
     "test": "jest"

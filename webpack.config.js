@@ -1,6 +1,6 @@
 module.exports = {
   context: `${__dirname}/client`,
-  entry: './app.jsx',
+  entry: './App.jsx',
   output: {
     path: `${__dirname}/public`,
     filename: 'bundle.js',
@@ -15,5 +15,8 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.wasm', '.jsx', '.js', '.json'],
   },
 };
