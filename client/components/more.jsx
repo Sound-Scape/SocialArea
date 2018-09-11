@@ -7,9 +7,15 @@ class More extends React.Component {
   }
 
   render() {
+    const moreStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid maroon',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        8.
+      <div style={moreStyle}>
+        7.
         {' '}
         <b>More</b>
         {' '}

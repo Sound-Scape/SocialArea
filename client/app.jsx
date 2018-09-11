@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Container from './components/container';
 import Profile from './components/profile';
 import Commenting from './components/commenting';
 import Likes from './components/likes';
@@ -16,14 +15,19 @@ class App extends React.Component {
   }
 
   render() {
+    const appStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid black',
+      borderRadius: '8px',
+    };
     return (
-      <div>
+      <div style={appStyle}>
         1.
         {' '}
         <b>React</b>
         {' '}
 Component is operational...
-        <Container />
         <Profile />
         <Commenting />
         <Likes />

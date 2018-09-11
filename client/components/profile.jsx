@@ -7,9 +7,15 @@ class Profile extends React.Component {
   }
 
   render() {
+    const profileStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid blue',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        3.
+      <div style={profileStyle}>
+        2.
         {' '}
         <b>Profile Pic</b>
         {' '}

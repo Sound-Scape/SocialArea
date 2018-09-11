@@ -7,9 +7,15 @@ class Commenting extends React.Component {
   }
 
   render() {
+    const commentStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid green',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        4.
+      <div style={commentStyle}>
+        3.
         {' '}
         <b>Comment</b>
         {' '}

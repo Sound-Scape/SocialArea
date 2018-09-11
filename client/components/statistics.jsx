@@ -7,9 +7,15 @@ class Statistics extends React.Component {
   }
 
   render() {
+    const statisticStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid violet',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        9.
+      <div style={statisticStyle}>
+        8.
         {' '}
         <b>Statistics</b>
         {' '}

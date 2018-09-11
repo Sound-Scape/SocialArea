@@ -7,9 +7,15 @@ class Share extends React.Component {
   }
 
   render() {
+    const shareStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid yellow',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        7.
+      <div style={shareStyle}>
+        6.
         {' '}
         <b>Share</b>
         {' '}

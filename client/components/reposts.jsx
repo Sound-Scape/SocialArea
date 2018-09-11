@@ -7,9 +7,15 @@ class Reposts extends React.Component {
   }
 
   render() {
+    const repostStyle = {
+      padding: 10,
+      margin: 10,
+      border: '2px solid lightblue',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        6.
+      <div style={repostStyle}>
+        5.
         {' '}
         <b>Reposts</b>
         {' '}
