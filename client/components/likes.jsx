@@ -8,18 +8,17 @@ class Likes extends React.Component {
 
   render() {
     const likeStyle = {
-      padding: 10,
-      margin: 10,
+      position: 'absolute',
+      width: 70,
+      height: 25,
+      bottom: 30,
+      left: 10,
       border: '2px solid red',
       borderRadius: '8px',
     };
     return (
       <div style={likeStyle}>
-        4.
-        {' '}
-        <b>Likes</b>
-        {' '}
-Component is operational...
+        Likes
       </div>
     );
   }

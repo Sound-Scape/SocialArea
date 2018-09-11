@@ -8,8 +8,7 @@ class Profile extends React.Component {
 
   render() {
     const profileStyle = {
-      padding: 10,
-      margin: 10,
+      position: 'absolute',
       width: 40,
       height: 40,
       border: '2px solid blue',

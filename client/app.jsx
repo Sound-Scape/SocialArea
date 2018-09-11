@@ -6,7 +6,7 @@ import Likes from './components/likes';
 import Reposts from './components/reposts';
 import Share from './components/share';
 import More from './components/more';
-import Statistics from './components/statistics';
+import Statistics from './components/stats/statistics';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,19 +16,16 @@ class App extends React.Component {
 
   render() {
     const appStyle = {
+      position: 'absolute',
       padding: 10,
       margin: 10,
-      width: '40%',
+      width: '600px',
+      height: '100px',
       border: '2px solid black',
       borderRadius: '8px',
     };
     return (
       <div style={appStyle}>
-        1.
-        {' '}
-        <b>React</b>
-        {' '}
-Component is operational...
         <Profile />
         <Commenting />
         <Likes />
