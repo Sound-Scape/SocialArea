@@ -7,13 +7,16 @@ class Profile extends React.Component {
   }
 
   render() {
+    const profileStyle = {
+      position: 'absolute',
+      width: 40,
+      height: 40,
+      border: '2px solid blue',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        3.
-        {' '}
-        <b>Profile Pic</b>
-        {' '}
-Component is operational...
+      <div style={profileStyle}>
+        Pic
       </div>
     );
   }

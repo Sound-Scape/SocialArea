@@ -7,13 +7,19 @@ class Commenting extends React.Component {
   }
 
   render() {
+    const commentStyle = {
+      position: 'absolute',
+      left: 55,
+      padding: 10,
+      border: '2px solid green',
+      borderRadius: '8px',
+    };
+    const commentInput = {
+      width: '520px',
+    };
     return (
-      <div>
-        4.
-        {' '}
-        <b>Comment</b>
-        {' '}
-Component is operational...
+      <div style={commentStyle}>
+        <input type="text" placeholder="Write a comment" style={commentInput} />
       </div>
     );
   }

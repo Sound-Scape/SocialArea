@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Container from './components/container';
 import Profile from './components/profile';
 import Commenting from './components/commenting';
 import Likes from './components/likes';
 import Reposts from './components/reposts';
 import Share from './components/share';
 import More from './components/more';
-import Statistics from './components/statistics';
+import Statistics from './components/stats/statistics';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,14 +15,17 @@ class App extends React.Component {
   }
 
   render() {
+    const appStyle = {
+      position: 'absolute',
+      padding: 10,
+      margin: 10,
+      width: '600px',
+      height: '100px',
+      border: '2px solid black',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        1.
-        {' '}
-        <b>React</b>
-        {' '}
-Component is operational...
-        <Container />
+      <div style={appStyle}>
         <Profile />
         <Commenting />
         <Likes />

@@ -7,13 +7,18 @@ class Reposts extends React.Component {
   }
 
   render() {
+    const repostStyle = {
+      position: 'absolute',
+      width: 90,
+      height: 25,
+      bottom: 30,
+      left: 90,
+      border: '2px solid lightblue',
+      borderRadius: '8px',
+    };
     return (
-      <div>
-        6.
-        {' '}
-        <b>Reposts</b>
-        {' '}
-Component is operational...
+      <div style={repostStyle}>
+        Repost
       </div>
     );
   }

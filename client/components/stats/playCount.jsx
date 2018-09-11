@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Container extends React.Component {
+class PlayCount extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,14 +9,10 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        2.
-        {' '}
-        <b>Container</b>
-        {' '}
-Component is operational...
+        plays
       </div>
     );
   }
 }
 
-export default Container;
+export default PlayCount;
