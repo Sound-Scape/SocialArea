@@ -18,6 +18,7 @@ class App extends React.Component {
     const appStyle = {
       padding: 10,
       margin: 10,
+      width: '40%',
       border: '2px solid black',
       borderRadius: '8px',
     };

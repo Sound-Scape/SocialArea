@@ -13,13 +13,12 @@ class Commenting extends React.Component {
       border: '2px solid green',
       borderRadius: '8px',
     };
+    const cow = {
+      width: '90%',
+    };
     return (
       <div style={commentStyle}>
-        3.
-        {' '}
-        <b>Comment</b>
-        {' '}
-Component is operational...
+        <input type="text" placeholder="Write a comment" style={cow} />
       </div>
     );
   }
