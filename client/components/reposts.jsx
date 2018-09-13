@@ -7,18 +7,20 @@ class Reposts extends React.Component {
   }
 
   render() {
+    /* * * * * * Styling * * * * * */
     const repostStyle = {
       position: 'absolute',
       width: 90,
       height: 25,
       bottom: 30,
       left: 90,
-      border: '2px solid lightblue',
-      borderRadius: '8px',
+      textAlign: 'center',
+      backgroundColor: 'white',
+      border: '1px solid lightgrey',
     };
     return (
-      <div style={repostStyle}>
-        Repost
+      <div>
+        <button type="button" style={repostStyle}>Repost</button>
       </div>
     );
   }

@@ -7,8 +7,11 @@ class Profile extends React.Component {
   }
 
   render() {
+    /* * * * * * Styling * * * * * */
     const profileStyle = {
       position: 'absolute',
+      marginTop: 7,
+      opacity: 1,
       width: 40,
       height: 40,
       backgroundImage: 'linear-gradient(135deg,#846170,#70929c)',

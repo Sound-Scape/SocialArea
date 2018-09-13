@@ -7,11 +7,15 @@ class Commenting extends React.Component {
   }
 
   render() {
+    /* * * * * * Styling * * * * * */
     const commentStyle = {
       position: 'absolute',
+      marginTop: 7,
+      opacity: 1,
       left: 50,
-      padding: 8,
-      border: '1px solid green',
+      padding: 8.5,
+      border: '1px solid grey',
+      background: 'lightgrey',
     };
     const commentInput = {
       width: '520px',

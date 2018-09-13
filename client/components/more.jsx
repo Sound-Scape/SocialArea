@@ -7,18 +7,20 @@ class More extends React.Component {
   }
 
   render() {
+    /* * * * * * Styling * * * * * */
     const moreStyle = {
       position: 'absolute',
       width: 70,
       height: 25,
       bottom: 30,
       left: 270,
-      border: '2px solid maroon',
-      borderRadius: '8px',
+      textAlign: 'center',
+      backgroundColor: 'white',
+      border: '1px solid lightgrey',
     };
     return (
-      <div style={moreStyle}>
-        More
+      <div>
+        <button type="button" style={moreStyle}>More</button>
       </div>
     );
   }

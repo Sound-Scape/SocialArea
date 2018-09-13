@@ -10,6 +10,7 @@ class Statistics extends React.Component {
   }
 
   render() {
+    /* * * * * * Styling * * * * * */
     const statisticStyle = {
       position: 'absolute',
       width: 120,
