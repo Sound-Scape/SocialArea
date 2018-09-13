@@ -9,10 +9,9 @@ class Commenting extends React.Component {
   render() {
     const commentStyle = {
       position: 'absolute',
-      left: 55,
-      padding: 10,
-      border: '2px solid green',
-      borderRadius: '8px',
+      left: 50,
+      padding: 8,
+      border: '1px solid green',
     };
     const commentInput = {
       width: '520px',
