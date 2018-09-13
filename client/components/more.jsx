@@ -1,4 +1,5 @@
 import React from 'react';
+import { DropdownButton, SplitButton, Dropdown } from 'react-bootstrap';
 
 class More extends React.Component {
   constructor(props) {
