@@ -7,6 +7,8 @@ db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', () => console.log('Database Connected!'));
 
 const statSchema = new mongoose.Schema({
+  id: Number,
+  name: String,
   plays: Number,
   likes: Number,
   reposts: Number,
