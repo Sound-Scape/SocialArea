@@ -8,7 +8,7 @@ class Reposts extends React.Component {
 
   render() {
     /* * * * * * Styling * * * * * */
-    const repostStyle = {
+    const styling = {
       position: 'absolute',
       width: 90,
       height: 25,
@@ -20,7 +20,7 @@ class Reposts extends React.Component {
     };
     return (
       <div>
-        <button type="button" style={repostStyle}>Repost</button>
+        <button type="button" style={styling}>Repost</button>
       </div>
     );
   }

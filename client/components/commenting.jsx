@@ -8,7 +8,7 @@ class Commenting extends React.Component {
 
   render() {
     /* * * * * * Styling * * * * * */
-    const commentStyle = {
+    const styling = {
       position: 'absolute',
       marginTop: 7,
       opacity: 1,
@@ -21,7 +21,7 @@ class Commenting extends React.Component {
       width: '520px',
     };
     return (
-      <div style={commentStyle}>
+      <div style={styling}>
         <input type="text" placeholder="Write a comment" style={commentInput} />
       </div>
     );

@@ -11,7 +11,7 @@ class Statistics extends React.Component {
 
   render() {
     /* * * * * * Styling * * * * * */
-    const statisticStyle = {
+    const styling = {
       position: 'absolute',
       width: 120,
       height: 25,
@@ -21,7 +21,7 @@ class Statistics extends React.Component {
       borderRadius: '8px',
     };
     return (
-      <div style={statisticStyle}>
+      <div style={styling}>
         <PlayCount />
         <LikeCount />
         <RepostCount />

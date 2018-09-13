@@ -8,7 +8,7 @@ class More extends React.Component {
 
   render() {
     /* * * * * * Styling * * * * * */
-    const moreStyle = {
+    const styling = {
       position: 'absolute',
       width: 70,
       height: 25,
@@ -20,7 +20,7 @@ class More extends React.Component {
     };
     return (
       <div>
-        <button type="button" style={moreStyle}>More</button>
+        <button type="button" style={styling}>More</button>
       </div>
     );
   }

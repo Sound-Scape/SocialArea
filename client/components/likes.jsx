@@ -17,7 +17,7 @@ class Likes extends React.Component {
 
   render() {
     /* * * * * * Styling * * * * * */
-    const likeStyle = {
+    const styling = {
       position: 'absolute',
       width: 70,
       height: 25,
@@ -38,7 +38,7 @@ class Likes extends React.Component {
     }
     return (
       <div>
-        <button type="button" style={likeStyle} onClick={this.handleClick}>{page}</button>
+        <button type="button" style={styling} onClick={this.handleClick}>{page}</button>
       </div>
     );
   }
