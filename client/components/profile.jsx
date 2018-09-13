@@ -11,13 +11,10 @@ class Profile extends React.Component {
       position: 'absolute',
       width: 40,
       height: 40,
-      border: '2px solid blue',
-      borderRadius: '8px',
+      backgroundImage: 'linear-gradient(135deg,#846170,#70929c)',
     };
     return (
-      <div style={profileStyle}>
-        Pic
-      </div>
+      <div style={profileStyle} />
     );
   }
 }
