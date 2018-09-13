@@ -7,18 +7,20 @@ class Share extends React.Component {
   }
 
   render() {
-    const shareStyle = {
+    /* * * * * * Styling * * * * * */
+    const styling = {
       position: 'absolute',
       width: 70,
       height: 25,
       bottom: 30,
       left: 190,
-      border: '2px solid yellow',
-      borderRadius: '8px',
+      textAlign: 'center',
+      backgroundColor: 'white',
+      border: '1px solid lightgrey',
     };
     return (
-      <div style={shareStyle}>
-        Share
+      <div>
+        <button type="button" style={styling}>Share</button>
       </div>
     );
   }

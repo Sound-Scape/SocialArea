@@ -15,6 +15,7 @@ class App extends React.Component {
   }
 
   render() {
+    /* * * * * * Styling * * * * * */
     const appStyle = {
       position: 'absolute',
       padding: 10,

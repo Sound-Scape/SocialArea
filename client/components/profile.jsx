@@ -7,14 +7,17 @@ class Profile extends React.Component {
   }
 
   render() {
-    const profileStyle = {
+    /* * * * * * Styling * * * * * */
+    const styling = {
       position: 'absolute',
+      marginTop: 7,
+      opacity: 1,
       width: 40,
       height: 40,
       backgroundImage: 'linear-gradient(135deg,#846170,#70929c)',
     };
     return (
-      <div style={profileStyle} />
+      <div style={styling} />
     );
   }
 }
