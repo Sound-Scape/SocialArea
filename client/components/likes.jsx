@@ -32,9 +32,9 @@ class Likes extends React.Component {
     const styling = {
       // TODO: Hover options
       position: 'absolute',
-      width: 70,
+      width: 75,
       height: 25,
-      bottom: 30,
+      bottom: 5,
       left: 10,
       color: coloring,
       textAlign: 'center',

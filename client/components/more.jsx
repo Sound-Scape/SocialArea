@@ -1,5 +1,4 @@
 import React from 'react';
-import { DropdownButton, SplitButton, Dropdown } from 'react-bootstrap';
 
 class More extends React.Component {
   constructor(props) {
@@ -20,22 +19,25 @@ class More extends React.Component {
     /* * * * Conditional rendering * * * */
     let page;
     let coloring;
+    let menu;
     const { clicked } = this.state;
     if (clicked === false) {
       page = '●●● More';
       coloring = 'black';
+      menu = null;
     }
     if (clicked === true) {
-      page = '●●● More';
       coloring = '#f50';
+      page = '●●● More';
+      menu = <Menu />;
     }
     /* * * * * * Styling * * * * * */
     const styling = {
       position: 'absolute',
       width: 80,
       height: 25,
-      bottom: 30,
-      left: 270,
+      bottom: 5,
+      left: 275,
       color: coloring,
       textAlign: 'center',
       backgroundColor: 'white',
@@ -44,9 +46,50 @@ class More extends React.Component {
     return (
       <div>
         <button type="button" style={styling} onClick={this.handleClick}>{page}</button>
+        {menu}
       </div>
     );
   }
+}
+
+function Menu() {
+  const menuStyling = {
+    position: 'absolute',
+    width: 120,
+    height: 25,
+    bottom: -20,
+    left: 275,
+    textAlign: 'center',
+    backgroundColor: 'white',
+    border: '1px solid lightgrey',
+  };
+  const menuStyling2 = {
+    position: 'absolute',
+    width: 120,
+    height: 25,
+    bottom: -45,
+    left: 275,
+    textAlign: 'center',
+    backgroundColor: 'white',
+    border: '1px solid lightgrey',
+  };
+  const menuStyling3 = {
+    position: 'absolute',
+    width: 120,
+    height: 25,
+    bottom: -70,
+    left: 275,
+    textAlign: 'center',
+    backgroundColor: 'white',
+    border: '1px solid lightgrey',
+  };
+  return (
+    <div>
+      <button type="button" style={menuStyling}>Add to Next up</button>
+      <button type="button" style={menuStyling2}>Add to playlist</button>
+      <button type="button" style={menuStyling3}>Station</button>
+    </div>
+  );
 }
 
 export default More;
