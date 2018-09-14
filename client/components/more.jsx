@@ -29,7 +29,7 @@ class More extends React.Component {
     if (clicked === true) {
       coloring = '#f50';
       page = '●●● More';
-      menu = <Menu />;
+      menu = <Menu handleClick={this.handleClick} />;
     }
     /* * * * * * Styling * * * * * */
     const styling = {
@@ -52,7 +52,7 @@ class More extends React.Component {
   }
 }
 
-function Menu() {
+function Menu(props) {
   const menuStyling = {
     position: 'absolute',
     width: 120,
@@ -83,11 +83,12 @@ function Menu() {
     backgroundColor: 'white',
     border: '1px solid lightgrey',
   };
+
   return (
     <div>
-      <button type="button" style={menuStyling}>Add to Next up</button>
-      <button type="button" style={menuStyling2}>Add to playlist</button>
-      <button type="button" style={menuStyling3}>Station</button>
+      <button type="button" style={menuStyling} onClick={props.handleClick}>Add to Next up</button>
+      <button type="button" style={menuStyling2} onClick={props.handleClick}>Add to playlist</button>
+      <button type="button" style={menuStyling3} onClick={props.handleClick}>Station</button>
     </div>
   );
 }
