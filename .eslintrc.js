@@ -10,6 +10,6 @@ module.exports = {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-console": 0,
     "react/destructuring-assignment": ["enabled", 'always'],
-    "react/prop-types": ["enabled", { "ignore": ['handleClick'], "customValidators": "customValidator" }],
+    "react/prop-types": ["enabled", { "ignore": ['handleClick', 'handleAsk'], "customValidators": "customValidator" }],
   }
 };

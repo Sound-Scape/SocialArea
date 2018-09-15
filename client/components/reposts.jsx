@@ -5,8 +5,10 @@ class Reposts extends React.Component {
     super(props);
     this.state = {
       reposted: false,
+      ask: true,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleAsk = this.handleAsk.bind(this);
   }
 
   handleClick() {
@@ -15,22 +17,32 @@ class Reposts extends React.Component {
     }));
   }
 
+  handleAsk() {
+    this.setState(prevState => ({
+      ask: !prevState.ask,
+    }));
+  }
+
   render() {
     /* * * * Conditional rendering * * * */
     let page;
     let coloring;
     let media;
-    const { reposted } = this.state;
+    const { reposted, ask } = this.state;
     if (reposted === false) {
       page = 'Repost';
       coloring = 'black';
       media = null;
     }
-    if (reposted === true) {
+    if (reposted === true && ask === true) {
       page = 'Reposted';
       coloring = '#f50';
-      media = <SocialMedia handleClick={this.handleClick} />;
+      media = <SocialMedia handleClick={this.handleClick} handleAsk={this.handleAsk} />;
+    } else if (reposted === true && ask === false) {
+      page = 'Reposted';
+      coloring = '#f50';
     }
+
     /* * * * * * Styling * * * * * */
     const styling = {
       position: 'absolute',
@@ -99,7 +111,10 @@ function SocialMedia(props) {
         This has been reposted to your SoundCloud profile.
         Would you like to share it with other friends as well?
       </div>
-      <input type="checkbox" style={checkboxStyling} />
+      <div id="social-icons">
+        [Social-Icons]
+      </div>
+      <input type="checkbox" onClick={props.handleAsk} style={checkboxStyling} />
       <p style={checkboxWordStyle}>Don&apos;t ask me again</p>
       <button type="button" onClick={props.handleClick} style={buttonStyling}>Close</button>
     </div>
