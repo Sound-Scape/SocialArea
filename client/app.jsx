@@ -23,8 +23,8 @@ class App extends React.Component {
       margin: 10,
       width: '600px',
       height: '100px',
-      border: '2px solid black',
-      borderRadius: '8px',
+      // border: '2px solid black',
+      // borderRadius: '8px',
     };
     return (
       <div style={appStyle}>

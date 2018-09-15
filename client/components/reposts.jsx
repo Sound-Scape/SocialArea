@@ -59,7 +59,7 @@ function SocialMedia(props) {
     position: 'absolute',
     width: 325,
     height: 150,
-    bottom: -175,
+    bottom: -150,
     left: 95,
     textAlign: 'center',
     backgroundColor: 'white',
