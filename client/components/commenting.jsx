@@ -13,7 +13,7 @@ class Commenting extends React.Component {
       marginTop: 7,
       opacity: 1,
       left: 50,
-      padding: 8.5,
+      padding: 6,
       border: '1px solid grey',
       background: 'lightgrey',
     };

@@ -16,26 +16,31 @@ class Likes extends React.Component {
   }
 
   render() {
+    /* * * * Conditional rendering * * * */
+    let page;
+    let coloring;
+    const { liked } = this.state;
+    if (liked === false) {
+      page = '🖤 Like';
+      coloring = 'black';
+    }
+    if (liked === true) {
+      page = '🧡 Liked';
+      coloring = '#f50';
+    }
     /* * * * * * Styling * * * * * */
     const styling = {
+      // TODO: Hover options
       position: 'absolute',
-      width: 70,
+      width: 75,
       height: 25,
-      bottom: 30,
+      bottom: 5,
       left: 10,
+      color: coloring,
       textAlign: 'center',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
     };
-    /* * * * Conditional rendering * * * */
-    let page;
-    const { liked } = this.state;
-    if (liked === false) {
-      page = '🖤';
-    }
-    if (liked === true) {
-      page = '🧡';
-    }
     return (
       <div>
         <button type="button" style={styling} onClick={this.handleClick}>{page}</button>
