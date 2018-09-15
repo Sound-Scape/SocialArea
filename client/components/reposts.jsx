@@ -30,26 +30,26 @@ class Reposts extends React.Component {
     let media;
     const { reposted, ask } = this.state;
     if (reposted === false) {
-      page = 'Repost';
+      page = '🗘 Repost';
       coloring = 'black';
       media = null;
     }
     if (reposted === true && ask === true) {
-      page = 'Reposted';
+      page = '🗘 Reposted';
       coloring = '#f50';
       media = <SocialMedia handleClick={this.handleClick} handleAsk={this.handleAsk} />;
     } else if (reposted === true && ask === false) {
-      page = 'Reposted';
+      page = '🗘 Reposted';
       coloring = '#f50';
     }
 
     /* * * * * * Styling * * * * * */
     const styling = {
       position: 'absolute',
-      width: 90,
+      width: 100,
       height: 25,
       bottom: 5,
-      left: 95,
+      left: 90,
       color: coloring,
       textAlign: 'center',
       backgroundColor: 'white',
@@ -80,12 +80,13 @@ function SocialMedia(props) {
     lineHeight: '35px',
   };
   const innerStyling = {
-    marginTop: 8,
+    marginTop: 12,
     marginLeft: 15,
     marginRight: 15,
     marginBottom: 15,
     textAlign: 'left',
     lineHeight: '20px',
+    fontFamily: 'Lucida Grande',
   };
   const buttonStyling = {
     position: 'absolute',
@@ -97,6 +98,7 @@ function SocialMedia(props) {
     backgroundColor: 'white',
     border: '1px solid lightgrey',
     lineHeight: '19px',
+    fontFamily: 'Lucida Grande',
   };
   const checkboxStyling = {
     position: 'absolute',
@@ -107,47 +109,48 @@ function SocialMedia(props) {
     position: 'absolute',
     left: 40,
     bottom: -5.5,
+    fontFamily: 'Lucida Grande',
   };
   const twitter = {
     position: 'absolute',
     height: 31,
     width: 32,
-    left: 25,
+    left: 22,
     bottom: 39,
   };
   const facebook = {
     position: 'absolute',
     height: 31,
     width: 32,
-    left: 64,
+    left: 61,
     bottom: 39,
   };
   const tumblr = {
     position: 'absolute',
     height: 31,
     width: 32,
-    left: 102.5,
+    left: 99.5,
     bottom: 39,
   };
   const google = {
     position: 'absolute',
     height: 31,
     width: 32,
-    left: 141,
+    left: 138,
     bottom: 39,
   };
   const pinterest = {
     position: 'absolute',
     height: 31,
     width: 32,
-    left: 180,
+    left: 177,
     bottom: 39,
   };
   const telegram = {
     position: 'absolute',
     height: 31,
     width: 32,
-    left: 219,
+    left: 216,
     bottom: 39,
   };
   return (
