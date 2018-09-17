@@ -28,19 +28,23 @@ class Reposts extends React.Component {
     let page;
     let coloring;
     let media;
+    let icon;
     const { reposted, ask } = this.state;
     if (reposted === false) {
-      page = '🗘 Repost';
+      page = '  Repost';
       coloring = 'black';
       media = null;
+      icon = <img src="images/repost.png" alt="repost" width="20px" height="20px" />;
     }
     if (reposted === true && ask === true) {
-      page = '🗘 Reposted';
+      page = '  Reposted';
       coloring = '#f50';
+      icon = <img src="images/reposted.png" alt="repost" width="20px" height="20px" />;
       media = <SocialMedia handleClick={this.handleClick} handleAsk={this.handleAsk} />;
     } else if (reposted === true && ask === false) {
-      page = '🗘 Reposted';
+      page = '  Reposted';
       coloring = '#f50';
+      icon = <img src="images/reposted.png" alt="repost" width="20px" height="20px" />;
     }
 
     /* * * * * * Styling * * * * * */
@@ -58,6 +62,7 @@ class Reposts extends React.Component {
     return (
       <div>
         <button type="button" style={styling} onClick={this.handleClick}>
+          {icon}
           {page}
         </button>
         {media}
@@ -160,12 +165,12 @@ function SocialMedia(props) {
         Would you like to share it with other friends as well?
       </div>
       <div id="social-icons">
-        <input type="image" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt="twitter_share_icon" style={twitter} />
-        <input type="image" src="http://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/512x512/facebook.png" alt="facebook_share_icon" style={facebook} />
-        <input type="image" src="https://vectors.pro/wp-content/uploads/2018/04/tumblr-icon-logo-vector-square.png" alt="tumblr_share_icon" style={tumblr} />
-        <input type="image" src="https://pourron.com/wp-content/uploads/2015/09/nouveau-logo-google-plus-carre-petit.png" alt="google_share_icon" style={google} />
-        <input type="image" src="https://uploads-ssl.webflow.com/5af3422365afd71a6f4ab395/5b1983503b6fc4cbfa5287c1_pinterest-p-500.png" alt="pinterest_share_icon" style={pinterest} />
-        <input type="image" src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/telegram-512.png" alt="email_share_icon" style={telegram} />
+        <input type="image" title="Twitter" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt="twitter_share_icon" style={twitter} />
+        <input type="image" title="Facebook" src="http://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/512x512/facebook.png" alt="facebook_share_icon" style={facebook} />
+        <input type="image" title="Tumblr" src="https://vectors.pro/wp-content/uploads/2018/04/tumblr-icon-logo-vector-square.png" alt="tumblr_share_icon" style={tumblr} />
+        <input type="image" title="Google+" src="https://pourron.com/wp-content/uploads/2015/09/nouveau-logo-google-plus-carre-petit.png" alt="google_share_icon" style={google} />
+        <input type="image" title="Pinterest" src="https://uploads-ssl.webflow.com/5af3422365afd71a6f4ab395/5b1983503b6fc4cbfa5287c1_pinterest-p-500.png" alt="pinterest_share_icon" style={pinterest} />
+        <input type="image" title="Email" src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/telegram-512.png" alt="email_share_icon" style={telegram} />
       </div>
       <input type="checkbox" onClick={props.handleAsk} style={checkboxStyling} />
       <p style={checkboxWordStyle}>Don&apos;t ask me again</p>

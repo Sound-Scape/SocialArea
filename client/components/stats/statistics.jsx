@@ -13,18 +13,16 @@ class Statistics extends React.Component {
     /* * * * * * Styling * * * * * */
     const styling = {
       position: 'absolute',
-      width: 120,
+      width: 220,
       height: 25,
-      bottom: 30,
+      bottom: 5,
       right: 15,
-      border: '2px solid violet',
-      borderRadius: '8px',
     };
     return (
       <div style={styling}>
-        <PlayCount />
-        <LikeCount />
-        <RepostCount />
+        <PlayCount plays={this.props.plays} />
+        <LikeCount likes={this.props.likes} />
+        <RepostCount reposts={this.props.reposts} />
       </div>
     );
   }

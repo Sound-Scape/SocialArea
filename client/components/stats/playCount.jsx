@@ -7,9 +7,18 @@ class PlayCount extends React.Component {
   }
 
   render() {
+    const styling = {
+      position: 'absolute',
+      width: 60,
+      height: 25,
+      bottom: -4,
+      right: 125,
+      color: 'grey',
+    };
     return (
-      <div>
-        plays
+      <div style={styling}>
+        <img src="images/playButton.png" alt="play_count" title={`${this.props.plays} plays`} width="20px" height="20px" />
+        {this.props.plays}
       </div>
     );
   }

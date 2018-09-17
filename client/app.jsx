@@ -1,18 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import Profile from './components/profile';
 import Commenting from './components/commenting';
 import Likes from './components/likes';
 import Reposts from './components/reposts';
 import Share from './components/share';
 import More from './components/more';
-// import Statistics from './components/stats/statistics';
+import Statistics from './components/stats/statistics';
 // import Example from './components/example';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  constructor() {
+    super();
+    this.state = {
+      plays: 0,
+      likes: 0,
+      reposts: 0,
+    };
+  }
+
+  componentDidMount() {
+    $.get('/song', (response) => {
+      console.log(response);
+      const song = JSON.parse(response);
+      this.setState({
+        plays: song.plays,
+        likes: song.likes,
+        reposts: song.reposts,
+      });
+    });
   }
 
   render() {
@@ -34,11 +51,15 @@ class App extends React.Component {
         <Reposts />
         <Share />
         <More />
+        <Statistics
+          plays={this.state.plays}
+          likes={this.state.likes}
+          reposts={this.state.reposts}
+        />
       </div>
     );
   }
 }
-// <Statistics />
 // <Example />
 
 ReactDOM.render(<App />, document.getElementById('app'));

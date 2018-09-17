@@ -7,9 +7,19 @@ class LikeCount extends React.Component {
   }
 
   render() {
+    const styling = {
+      position: 'absolute',
+      width: 60,
+      height: 25,
+      bottom: -4,
+      right: 67,
+      color: 'grey',
+    };
     return (
-      <div>
-        likes
+      <div style={styling}>
+        <img src="images/heart.png" alt="like_count" title={`${this.props.likes} likes`} width="16px" height="16px" />
+        {' '}
+        {this.props.likes}
       </div>
     );
   }

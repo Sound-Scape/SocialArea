@@ -10,7 +10,7 @@ class Share extends React.Component {
     /* * * * * * Styling * * * * * */
     const styling = {
       position: 'absolute',
-      width: 70,
+      width: 80,
       height: 25,
       bottom: 5,
       left: 195,
@@ -20,7 +20,10 @@ class Share extends React.Component {
     };
     return (
       <div>
-        <button type="button" style={styling}>Share</button>
+        <button type="button" style={styling}>
+          <img src="images/share.png" alt="share" width="20px" height="20px" />
+          Share
+        </button>
       </div>
     );
   }
