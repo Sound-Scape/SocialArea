@@ -4,7 +4,7 @@ import $ from 'jquery';
 import Profile from './components/profile';
 import Commenting from './components/commenting';
 import Likes from './components/likes';
-import Reposts from './components/reposts';
+import Reposts from './components/repost/reposts';
 import Share from './components/share';
 import More from './components/more';
 import Statistics from './components/stats/statistics';
@@ -38,10 +38,10 @@ class App extends React.Component {
       position: 'absolute',
       padding: 10,
       margin: 10,
-      width: '600px',
+      width: '60%',
       height: '100px',
-      // border: '2px solid black',
-      // borderRadius: '8px',
+      border: '2px solid black',
+      borderRadius: '8px',
     };
     return (
       <div style={appStyle}>

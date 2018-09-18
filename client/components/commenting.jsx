@@ -18,7 +18,7 @@ class Commenting extends React.Component {
       background: 'lightgrey',
     };
     const commentInput = {
-      width: '520px',
+      width: '560px',
     };
     return (
       <div style={styling}>
