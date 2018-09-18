@@ -59,7 +59,7 @@ class Share extends React.Component {
           className="modal"
           clicked={this.state.clicked}
         >
-          <ModalContent />
+          <ModalContent handleClick={this.handleClick} />
         </Modal>
       </div>
     );
