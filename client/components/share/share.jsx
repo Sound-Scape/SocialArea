@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from './modal';
-import ModalContent from './modalContent';
+import ModalContent from './modalContent/modalContent';
 
 class Share extends React.Component {
   constructor(props) {
