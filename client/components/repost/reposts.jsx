@@ -35,7 +35,7 @@ class Reposts extends React.Component {
       width: 20,
       height: 20,
       left: 5,
-      bottom: 1,
+      bottom: 2,
     };
     const { reposted, ask } = this.state;
     if (reposted === false) {

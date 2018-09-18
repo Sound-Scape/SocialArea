@@ -1,9 +1,21 @@
 import React from 'react';
+import Modal from './modal';
+import ModalContent from './modalContent';
 
 class Share extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      clicked: false,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      clicked: !prevState.clicked,
+    }));
+    console.log('Share clicked');
   }
 
   render() {
@@ -26,12 +38,29 @@ class Share extends React.Component {
       left: 5,
       bottom: 2,
     };
+    const modalStyling = {
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      background: 'rgb(237, 237, 237, 0.8)',
+      opacity: 6,
+    };
+
     return (
       <div>
-        <button type="button" style={styling}>
+        <button type="button" style={styling} onClick={this.handleClick}>
           <img src="images/share.png" alt="share" style={imageStyling} />
           Share
         </button>
+        <Modal
+          style={modalStyling}
+          className="modal"
+          clicked={this.state.clicked}
+        >
+          <ModalContent />
+        </Modal>
       </div>
     );
   }

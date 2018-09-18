@@ -48,7 +48,7 @@ class SocialMedia extends React.Component {
     const checkboxWordStyle = {
       position: 'absolute',
       left: 40,
-      bottom: -5.5,
+      bottom: -7.5,
       fontFamily: 'Lucida Grande',
     };
     const twitter = {
@@ -100,12 +100,12 @@ class SocialMedia extends React.Component {
         Would you like to share it with other friends as well?
         </div>
         <div id="social-icons">
-          <input type="image" title="Twitter" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt="twitter_share_icon" style={twitter} />
-          <input type="image" title="Facebook" src="http://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/512x512/facebook.png" alt="facebook_share_icon" style={facebook} />
-          <input type="image" title="Tumblr" src="https://vectors.pro/wp-content/uploads/2018/04/tumblr-icon-logo-vector-square.png" alt="tumblr_share_icon" style={tumblr} />
-          <input type="image" title="Google+" src="https://pourron.com/wp-content/uploads/2015/09/nouveau-logo-google-plus-carre-petit.png" alt="google_share_icon" style={google} />
-          <input type="image" title="Pinterest" src="https://uploads-ssl.webflow.com/5af3422365afd71a6f4ab395/5b1983503b6fc4cbfa5287c1_pinterest-p-500.png" alt="pinterest_share_icon" style={pinterest} />
-          <input type="image" title="Email" src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/telegram-512.png" alt="email_share_icon" style={telegram} />
+          <input type="image" title="Twitter" src="images/twitter.png" alt="twitter_share_icon" style={twitter} />
+          <input type="image" title="Facebook" src="images/facebook.png" alt="facebook_share_icon" style={facebook} />
+          <input type="image" title="Tumblr" src="images/tumblr.png" alt="tumblr_share_icon" style={tumblr} />
+          <input type="image" title="Google+" src="images/google+.png" alt="google_share_icon" style={google} />
+          <input type="image" title="Pinterest" src="images/pinterest.png" alt="pinterest_share_icon" style={pinterest} />
+          <input type="image" title="Email" src="images/email.png" alt="email_share_icon" style={telegram} />
         </div>
         <input type="checkbox" onClick={this.props.handleAsk} style={checkboxStyling} />
         <p style={checkboxWordStyle}>Don&apos;t ask me again</p>
