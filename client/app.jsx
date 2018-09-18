@@ -5,7 +5,7 @@ import Profile from './components/profile';
 import Commenting from './components/commenting';
 import Likes from './components/likes';
 import Reposts from './components/repost/reposts';
-import Share from './components/share';
+import Share from './components/share/share';
 import More from './components/more';
 import Statistics from './components/stats/statistics';
 // import Example from './components/example';
