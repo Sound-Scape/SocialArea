@@ -9,15 +9,24 @@ class LikeCount extends React.Component {
   render() {
     const styling = {
       position: 'absolute',
-      width: 60,
+      width: 70,
       height: 25,
-      bottom: -4,
-      right: 67,
+      bottom: -6,
+      right: 55,
       color: 'grey',
+      textIndent: '25px',
+      fontSize: '13px',
+    };
+    const imageStyling = {
+      position: 'absolute',
+      width: 15,
+      height: 15,
+      left: 8,
+      bottom: 10,
     };
     return (
-      <div style={styling}>
-        <img src="images/heart.png" alt="like_count" title={`${this.props.likes} likes`} width="16px" height="16px" />
+      <div style={styling} title={`${this.props.likes} likes`}>
+        <img src="images/heart.png" alt="like_count" style={imageStyling} />
         {' '}
         {this.props.likes}
       </div>

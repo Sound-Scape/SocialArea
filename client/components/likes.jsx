@@ -34,12 +34,13 @@ class Likes extends React.Component {
       position: 'absolute',
       width: 75,
       height: 25,
-      bottom: 5,
-      left: 10,
+      bottom: 8,
+      left: 4,
       color: coloring,
       textAlign: 'center',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
+      borderRadius: '3px',
     };
     return (
       <div>

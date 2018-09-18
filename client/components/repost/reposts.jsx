@@ -30,22 +30,29 @@ class Reposts extends React.Component {
     let coloring;
     let media;
     let icon;
+    const imageStyling = {
+      position: 'absolute',
+      width: 20,
+      height: 20,
+      left: 5,
+      bottom: 1,
+    };
     const { reposted, ask } = this.state;
     if (reposted === false) {
-      page = '  Repost';
+      page = ' Repost';
       coloring = 'black';
       media = null;
-      icon = <img src="images/repost.png" alt="repost" width="20px" height="20px" />;
+      icon = <img src="images/repost.png" alt="repost" style={imageStyling} />;
     }
     if (reposted === true && ask === true) {
-      page = '  Reposted';
+      page = ' Reposted';
       coloring = '#f50';
-      icon = <img src="images/reposted.png" alt="repost" width="20px" height="20px" />;
+      icon = <img src="images/reposted.png" alt="repost" style={imageStyling} />;
       media = <SocialMedia handleClick={this.handleClick} handleAsk={this.handleAsk} />;
     } else if (reposted === true && ask === false) {
-      page = '  Reposted';
+      page = ' Reposted';
       coloring = '#f50';
-      icon = <img src="images/reposted.png" alt="repost" width="20px" height="20px" />;
+      icon = <img src="images/reposted.png" alt="repost" style={imageStyling} />;
     }
 
     /* * * * * * Styling * * * * * */
@@ -53,12 +60,14 @@ class Reposts extends React.Component {
       position: 'absolute',
       width: 100,
       height: 25,
-      bottom: 5,
-      left: 90,
+      bottom: 8,
+      left: 84,
       color: coloring,
+      textIndent: '15px',
       textAlign: 'center',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
+      borderRadius: '3px',
     };
     return (
       <div>

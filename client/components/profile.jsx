@@ -12,8 +12,8 @@ class Profile extends React.Component {
       position: 'absolute',
       marginTop: 7,
       opacity: 1,
-      width: 40,
-      height: 40,
+      width: 35.5,
+      height: 35.5,
       backgroundImage: 'linear-gradient(135deg,#846170,#70929c)',
     };
     return (

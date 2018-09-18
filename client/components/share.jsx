@@ -12,16 +12,24 @@ class Share extends React.Component {
       position: 'absolute',
       width: 80,
       height: 25,
-      bottom: 5,
-      left: 195,
-      textAlign: 'center',
+      bottom: 8,
+      left: 190,
+      textIndent: '15px',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
+      borderRadius: '3px',
+    };
+    const imageStyling = {
+      position: 'absolute',
+      width: 20,
+      height: 20,
+      left: 5,
+      bottom: 2,
     };
     return (
       <div>
         <button type="button" style={styling}>
-          <img src="images/share.png" alt="share" width="20px" height="20px" />
+          <img src="images/share.png" alt="share" style={imageStyling} />
           Share
         </button>
       </div>

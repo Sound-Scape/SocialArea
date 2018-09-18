@@ -36,12 +36,12 @@ class App extends React.Component {
     /* * * * * * Styling * * * * * */
     const appStyle = {
       position: 'absolute',
-      padding: 10,
-      margin: 10,
-      width: '60%',
-      height: '100px',
-      border: '2px solid black',
-      borderRadius: '8px',
+      padding: 5,
+      margin: 5,
+      width: '750px',
+      height: '80px',
+      backgroundColor: 'white',
+      borderBottom: '1px solid lightgrey',
     };
     return (
       <div style={appStyle}>

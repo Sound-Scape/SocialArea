@@ -15,8 +15,8 @@ class Statistics extends React.Component {
       position: 'absolute',
       width: 220,
       height: 25,
-      bottom: 5,
-      right: 15,
+      bottom: 8,
+      right: 1,
     };
     return (
       <div style={styling}>

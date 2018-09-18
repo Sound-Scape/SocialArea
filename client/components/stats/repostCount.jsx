@@ -9,15 +9,24 @@ class RepostCount extends React.Component {
   render() {
     const styling = {
       position: 'absolute',
-      width: 64,
+      width: 70,
       height: 25,
-      bottom: -4,
-      right: 5,
+      bottom: -6,
+      right: -6,
       color: 'grey',
+      textIndent: '27px',
+      fontSize: '13px',
+    };
+    const imageStyling = {
+      position: 'absolute',
+      width: 17,
+      height: 17,
+      left: 7,
+      bottom: 9,
     };
     return (
-      <div style={styling}>
-        <img src="images/repostCount.png" alt="repost_count" title={`${this.props.reposts} reposts`} width="19px" height="19px" />
+      <div style={styling} title={`${this.props.reposts} reposts`}>
+        <img src="images/repostCount.png" alt="repost_count" style={imageStyling} />
         {' '}
         {this.props.reposts}
       </div>

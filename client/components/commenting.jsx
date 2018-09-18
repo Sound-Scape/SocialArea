@@ -12,13 +12,13 @@ class Commenting extends React.Component {
       position: 'absolute',
       marginTop: 7,
       opacity: 1,
-      left: 50,
+      left: 40,
       padding: 6,
       border: '1px solid grey',
       background: 'lightgrey',
     };
     const commentInput = {
-      width: '560px',
+      width: '700px',
     };
     return (
       <div style={styling}>

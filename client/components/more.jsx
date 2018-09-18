@@ -36,12 +36,13 @@ class More extends React.Component {
       position: 'absolute',
       width: 80,
       height: 25,
-      bottom: 5,
-      left: 280,
+      bottom: 8,
+      left: 275,
       color: coloring,
       textAlign: 'center',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
+      borderRadius: '3px',
     };
     return (
       <div>
@@ -56,9 +57,9 @@ function Menu(props) {
   const menuStyling = {
     position: 'absolute',
     width: 120,
-    height: 25,
+    height: 28,
     bottom: -20,
-    left: 280,
+    left: 275,
     textAlign: 'center',
     backgroundColor: 'white',
     border: '1px solid lightgrey',
@@ -66,9 +67,9 @@ function Menu(props) {
   const menuStyling2 = {
     position: 'absolute',
     width: 120,
-    height: 25,
+    height: 28,
     bottom: -45,
-    left: 280,
+    left: 275,
     textAlign: 'center',
     backgroundColor: 'white',
     border: '1px solid lightgrey',
@@ -76,9 +77,9 @@ function Menu(props) {
   const menuStyling3 = {
     position: 'absolute',
     width: 120,
-    height: 25,
+    height: 28,
     bottom: -70,
-    left: 280,
+    left: 275,
     textAlign: 'center',
     backgroundColor: 'white',
     border: '1px solid lightgrey',
