@@ -18,7 +18,7 @@ class ModalShareTab extends React.Component {
         <button type="button">Embed</button>
         <button type="button">Message</button>
         <div id="modalShare-top">
-          <img src="images/musicPlayer.png" alt="music_player" style={imgStyle} />
+          <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/musicPlayer.PNG" alt="music_player" style={imgStyle} />
         </div>
         <div id="modalShare-bottom">
           Share

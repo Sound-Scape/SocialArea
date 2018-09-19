@@ -9,7 +9,7 @@ import Share from './components/share/share';
 import More from './components/more';
 import Statistics from './components/stats/statistics';
 
-class App extends React.Component {
+class SocialArea extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -34,7 +34,7 @@ class App extends React.Component {
   render() {
     /* * * * * * Styling * * * * * */
     const appStyle = {
-      position: 'absolute',
+      position: 'relative',
       padding: 5,
       margin: 5,
       width: '750px',
@@ -60,6 +60,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<SocialArea />, document.getElementById('SocialArea'));
 
-export default App;
+export default SocialArea;

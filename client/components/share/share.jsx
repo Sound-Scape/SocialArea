@@ -51,7 +51,7 @@ class Share extends React.Component {
     return (
       <div>
         <button type="button" style={styling} onClick={this.handleClick}>
-          <img src="images/share.png" alt="share" style={imageStyling} />
+          <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/share.png" alt="share" style={imageStyling} />
           Share
         </button>
         <Modal

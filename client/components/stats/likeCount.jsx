@@ -26,7 +26,7 @@ class LikeCount extends React.Component {
     };
     return (
       <div style={styling} title={`${this.props.likes} likes`}>
-        <img src="images/heart.png" alt="like_count" style={imageStyling} />
+        <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/heart.png" alt="like_count" style={imageStyling} />
         {' '}
         {this.props.likes}
       </div>

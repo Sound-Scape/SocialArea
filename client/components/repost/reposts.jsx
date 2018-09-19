@@ -42,17 +42,17 @@ class Reposts extends React.Component {
       page = ' Repost';
       coloring = 'black';
       media = null;
-      icon = <img src="images/repost.png" alt="repost" style={imageStyling} />;
+      icon = <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/repost.png" alt="repost" style={imageStyling} />;
     }
     if (reposted === true && ask === true) {
       page = ' Reposted';
       coloring = '#f50';
-      icon = <img src="images/reposted.png" alt="repost" style={imageStyling} />;
+      icon = <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/reposted.png" alt="repost" style={imageStyling} />;
       media = <SocialMedia handleClick={this.handleClick} handleAsk={this.handleAsk} />;
     } else if (reposted === true && ask === false) {
       page = ' Reposted';
       coloring = '#f50';
-      icon = <img src="images/reposted.png" alt="repost" style={imageStyling} />;
+      icon = <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/reposted.png" alt="repost" style={imageStyling} />;
     }
 
     /* * * * * * Styling * * * * * */

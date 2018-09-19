@@ -26,7 +26,7 @@ class PlayCount extends React.Component {
     };
     return (
       <div style={styling} title={`${this.props.plays} plays`}>
-        <img src="images/playButton.png" alt="play_count" style={imageStyling} />
+        <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/playButton.png" alt="play_count" style={imageStyling} />
         {this.props.plays}
       </div>
     );

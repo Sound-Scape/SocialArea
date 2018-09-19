@@ -26,7 +26,7 @@ class RepostCount extends React.Component {
     };
     return (
       <div style={styling} title={`${this.props.reposts} reposts`}>
-        <img src="images/repostCount.png" alt="repost_count" style={imageStyling} />
+        <img src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/repostCount.png" alt="repost_count" style={imageStyling} />
         {' '}
         {this.props.reposts}
       </div>
