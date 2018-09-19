@@ -8,7 +8,6 @@ import Reposts from './components/repost/reposts';
 import Share from './components/share/share';
 import More from './components/more';
 import Statistics from './components/stats/statistics';
-// import Example from './components/example';
 
 class App extends React.Component {
   constructor() {
@@ -21,13 +20,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    $.get('/song', (response) => {
-      console.log(response);
-      const song = JSON.parse(response);
+    const id = window.location.pathname.slice(7, window.location.pathname.length - 1);
+    $.get(`/api/${id}`, (response) => {
+      console.log('response =>', response);
       this.setState({
-        plays: song.plays,
-        likes: song.likes,
-        reposts: song.reposts,
+        plays: response.plays,
+        likes: response.likes,
+        reposts: response.reposts,
       });
     });
   }
@@ -60,7 +59,6 @@ class App extends React.Component {
     );
   }
 }
-// <Example />
 
 ReactDOM.render(<App />, document.getElementById('app'));
 

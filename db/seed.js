@@ -12,11 +12,13 @@ const songSchema = new mongoose.Schema({
 
 const Songs = mongoose.model('Songs', songSchema);
 
-const randNum = function generateRandomNumber() { return Math.floor(Math.random() * 10000); };
+const randNumPlays = function generateRandomNumber() { return Math.floor(Math.random() * 10000); };
+const randNumLikes = function generateRandomNumber() { return Math.floor(Math.random() * 1000); };
+const randNumReposts = function generateRandomNumber() { return Math.floor(Math.random() * 500); };
 
 for (let i = 0; i < 100; i += 1) {
   const stat = new Songs({
-    id: i + 1, plays: randNum(), likes: randNum(), reposts: randNum(),
+    id: i + 1, plays: randNumPlays(), likes: randNumLikes(), reposts: randNumReposts(),
   });
   stat.save();
 }

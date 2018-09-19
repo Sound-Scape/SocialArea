@@ -1,17 +1,16 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const { getAll } = require('../db/index.js');
+const { getSong } = require('../db/index.js');
 
 const app = express();
+const port = process.env.PORT || 3004;
 
 app.use(express.static('public'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/songs/:id', express.static('public'));
 
-app.get('/song', (req, res) => {
-  getAll('1', (err, data) => {
-    res.send(JSON.stringify(data[0]));
+app.get('/api/:id', (req, res) => {
+  getSong(req.params.id, (err, data) => {
+    res.send(data[0]);
   });
 });
 
-app.listen(3004, () => console.log('Listening to port 3004...'));
+app.listen(port, () => console.log(`Listening to port ${port}...`));

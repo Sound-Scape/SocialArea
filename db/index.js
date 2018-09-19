@@ -12,7 +12,7 @@ const songSchema = new mongoose.Schema({
 
 const Songs = mongoose.model('Songs', songSchema);
 
-const getAll = (id, callback) => {
+const getSong = (id, callback) => {
   Songs.find({ id }, (err, data) => {
     if (err) {
       callback(err, null);
@@ -22,4 +22,4 @@ const getAll = (id, callback) => {
   });
 };
 
-exports.getAll = getAll;
+exports.getSong = getSong;
