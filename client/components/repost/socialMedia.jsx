@@ -100,12 +100,12 @@ class SocialMedia extends React.Component {
         Would you like to share it with other friends as well?
         </div>
         <div id="social-icons">
-          <input type="image" title="Twitter" src="images/twitter.png" alt="twitter_share_icon" style={twitter} />
-          <input type="image" title="Facebook" src="images/facebook.png" alt="facebook_share_icon" style={facebook} />
-          <input type="image" title="Tumblr" src="images/tumblr.png" alt="tumblr_share_icon" style={tumblr} />
-          <input type="image" title="Google+" src="images/google+.png" alt="google_share_icon" style={google} />
-          <input type="image" title="Pinterest" src="images/pinterest.png" alt="pinterest_share_icon" style={pinterest} />
-          <input type="image" title="Email" src="images/email.png" alt="email_share_icon" style={telegram} />
+          <input type="image" title="Twitter" src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/twitter.png" alt="twitter_share_icon" style={twitter} />
+          <input type="image" title="Facebook" src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/facebook.png" alt="facebook_share_icon" style={facebook} />
+          <input type="image" title="Tumblr" src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/tumblr.png" alt="tumblr_share_icon" style={tumblr} />
+          <input type="image" title="Google+" src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/google%2B.png" alt="google_share_icon" style={google} />
+          <input type="image" title="Pinterest" src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/pinterest.png" alt="pinterest_share_icon" style={pinterest} />
+          <input type="image" title="Email" src="https://s3-us-west-1.amazonaws.com/fec-project-social-area/email.png" alt="email_share_icon" style={telegram} />
         </div>
         <input type="checkbox" onClick={this.props.handleAsk} style={checkboxStyling} />
         <p style={checkboxWordStyle}>Don&apos;t ask me again</p>
