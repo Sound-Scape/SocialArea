@@ -11,7 +11,7 @@ class Modal extends React.Component {
 
     return ReactDOM.createPortal(
       <div {...rest}>{this.props.children}</div>,
-      document.getElementById('share-modal'),
+      document.getElementById('modal'),
     );
   }
 }

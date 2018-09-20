@@ -10,8 +10,8 @@ import More from './components/more';
 import Statistics from './components/stats/statistics';
 
 class SocialArea extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       plays: 0,
       likes: 0,
