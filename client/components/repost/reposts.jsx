@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialMedia from './socialMedia';
+import SocialMedia from './SocialMedia';
 
 class Reposts extends React.Component {
   constructor(props) {

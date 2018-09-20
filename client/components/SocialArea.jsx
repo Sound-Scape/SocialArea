@@ -1,19 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import Profile from './components/profile';
-import Commenting from './components/commenting';
-import Likes from './components/likes';
-import Reposts from './components/repost/reposts';
-import Share from './components/share/share';
-import More from './components/more';
-import Statistics from './components/stats/statistics';
+import Profile from './Profile';
+import Commenting from './Commenting';
+import Likes from './Likes';
+import Reposts from './repost/Reposts';
+import Share from './share/Sharing';
+import More from './More';
+import Statistics from './stats/Statistics';
 
 const queryString = require('query-string');
 
 class SocialArea extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       plays: 0,
       likes: 0,
@@ -63,6 +62,6 @@ class SocialArea extends React.Component {
   }
 }
 
-ReactDOM.render(<SocialArea />, document.getElementById('SocialArea'));
+// ReactDOM.render(<SocialArea />, document.getElementById('SocialArea'));
 
 export default SocialArea;

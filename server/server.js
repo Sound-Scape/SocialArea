@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { getSong } = require('../db/index.js');
+const { getSong } = require('../db');
 
 const app = express();
 const port = process.env.PORT || 3004;
