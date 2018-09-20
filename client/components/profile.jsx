@@ -13,7 +13,7 @@ class Profile extends React.Component {
       marginTop: 7,
       opacity: 1,
       width: 35.5,
-      height: 35.5,
+      height: 35.3,
       backgroundImage: 'linear-gradient(135deg,#846170,#70929c)',
     };
     return (

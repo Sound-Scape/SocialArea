@@ -9,9 +9,11 @@ import Share from './components/share/share';
 import More from './components/more';
 import Statistics from './components/stats/statistics';
 
+const queryString = require('query-string');
+
 class SocialArea extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       plays: 0,
       likes: 0,
@@ -20,8 +22,9 @@ class SocialArea extends React.Component {
   }
 
   componentDidMount() {
-    const id = window.location.pathname.slice(7, window.location.pathname.length - 1);
-    $.get(`/api/${id}`, (response) => {
+    const parsed = queryString.parse(location.search);
+    // const id = window.location.pathname.slice(7, window.location.pathname.length - 1);
+    $.get(`http://localhost:3004/songs/${Number(parsed.id)}`, (response) => {
       console.log('response =>', response);
       this.setState({
         plays: response.plays,
@@ -37,7 +40,7 @@ class SocialArea extends React.Component {
       position: 'relative',
       padding: 5,
       margin: 5,
-      width: '750px',
+      width: '780px',
       height: '80px',
       backgroundColor: 'white',
       borderBottom: '1px solid lightgrey',

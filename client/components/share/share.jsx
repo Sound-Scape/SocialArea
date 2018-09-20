@@ -42,7 +42,7 @@ class Share extends React.Component {
       position: 'fixed',
       top: 0,
       left: 0,
-      zIndex: 4,
+      zIndex: 20,
       width: '100%',
       height: '100%',
       background: 'rgb(237, 237, 237, 0.8)',

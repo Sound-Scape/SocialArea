@@ -13,6 +13,7 @@ class SocialMedia extends React.Component {
       height: 150,
       bottom: -150,
       left: 95,
+      zIndex: 20,
       textAlign: 'center',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
@@ -24,6 +25,7 @@ class SocialMedia extends React.Component {
       marginLeft: 15,
       marginRight: 15,
       marginBottom: 15,
+      zIndex: 20,
       textAlign: 'left',
       lineHeight: '20px',
       fontFamily: 'Lucida Grande',
@@ -34,6 +36,7 @@ class SocialMedia extends React.Component {
       height: 22,
       right: 15,
       bottom: 10,
+      zIndex: 20,
       textAlign: 'center',
       backgroundColor: 'white',
       border: '1px solid lightgrey',
@@ -44,12 +47,14 @@ class SocialMedia extends React.Component {
       position: 'absolute',
       left: 20,
       bottom: 15,
+      zIndex: 20,
     };
     const checkboxWordStyle = {
       position: 'absolute',
       left: 40,
       bottom: -7.5,
       fontFamily: 'Lucida Grande',
+      zIndex: 20,
     };
     const twitter = {
       position: 'absolute',
@@ -57,6 +62,7 @@ class SocialMedia extends React.Component {
       width: 32,
       left: 22,
       bottom: 39,
+      zIndex: 20,
     };
     const facebook = {
       position: 'absolute',
@@ -64,6 +70,7 @@ class SocialMedia extends React.Component {
       width: 32,
       left: 61,
       bottom: 39,
+      zIndex: 20,
     };
     const tumblr = {
       position: 'absolute',
@@ -71,6 +78,7 @@ class SocialMedia extends React.Component {
       width: 32,
       left: 99.5,
       bottom: 39,
+      zIndex: 20,
     };
     const google = {
       position: 'absolute',
@@ -78,6 +86,7 @@ class SocialMedia extends React.Component {
       width: 32,
       left: 138,
       bottom: 39,
+      zIndex: 20,
     };
     const pinterest = {
       position: 'absolute',
@@ -85,6 +94,7 @@ class SocialMedia extends React.Component {
       width: 32,
       left: 177,
       bottom: 39,
+      zIndex: 20,
     };
     const telegram = {
       position: 'absolute',
@@ -92,6 +102,7 @@ class SocialMedia extends React.Component {
       width: 32,
       left: 216,
       bottom: 39,
+      zIndex: 20,
     };
     return (
       <div style={styling}>

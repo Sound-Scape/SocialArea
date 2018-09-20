@@ -35,11 +35,13 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "mongoose": "^5.2.13",
     "nodemon": "^1.18.4",
     "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   }
