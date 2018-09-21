@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
+import axios from 'axios';
 import Profile from './Profile';
 import Commenting from './Commenting';
 import Likes from './Likes';
@@ -8,7 +8,6 @@ import Share from './share/Sharing';
 import More from './More';
 import Statistics from './stats/Statistics';
 
-const queryString = require('query-string');
 
 class SocialArea extends React.Component {
   constructor(props) {
@@ -21,16 +20,19 @@ class SocialArea extends React.Component {
   }
 
   componentDidMount() {
-    const parsed = queryString.parse(location.search);
-    // const id = window.location.pathname.slice(7, window.location.pathname.length - 1);
-    $.get(`http://localhost:3004/songs/${Number(parsed.id)}`, (response) => {
-      console.log('response =>', response);
-      this.setState({
-        plays: response.plays,
-        likes: response.likes,
-        reposts: response.reposts,
+    const id = window.location.pathname.split('/')[2];
+    axios.get(`/api/stats/${id}`)
+      .then(({ data }) => {
+        const response = data[0];
+        this.setState({
+          plays: response.plays,
+          likes: response.likes,
+          reposts: response.reposts,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
       });
-    });
   }
 
   render() {

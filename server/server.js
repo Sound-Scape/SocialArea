@@ -9,9 +9,9 @@ app.use(cors());
 
 app.use(express.static('public'));
 
-app.get('/songs/:id', (req, res) => {
+app.get('/api/stats/:id', (req, res) => {
   getSong(req.params.id, (err, data) => {
-    res.send(data[0]);
+    res.json(data);
   });
 });
 

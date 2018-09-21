@@ -9,22 +9,25 @@ class ModalContent extends React.Component {
 
   render() {
     const styling = {
-      position: 'absolute',
-      marginTop: '7%',
-      marginLeft: '34%',
-      width: 420,
-      height: 340,
+      width: 505,
+      height: 385,
       border: '2px solid black',
+      backgroundColor: 'white',
     };
     const closeButtonStyle = {
       position: 'absolute',
-      top: 0,
-      right: 0,
+      top: 2,
+      right: 2,
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      fontSize: 20,
     };
     return (
-      <div style={styling}>
+      <div>
         <button type="button" onClick={this.props.handleClick} style={closeButtonStyle}>X</button>
-        Inner Modal
+        <div style={styling}>
+          Inner Modal
+        </div>
         <ModalShareTab />
       </div>
     );
